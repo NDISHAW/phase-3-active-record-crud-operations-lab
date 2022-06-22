@@ -30,16 +30,7 @@ class Movie < ActiveRecord::Base
         self.update(attributes)
     end
 
-    def self.update_all_titles(title)
-        Movie.update(title: title)
-    end
-
-    def self.delete_by_id(id)
-        movie = Movie.find(id)
-        movie.destroy
-    end
-
-    def self.delete_all_movies
-        Movie.destroy_all
+    def self.update_all_tittles(tittle)
+        Movie.
     end
 end

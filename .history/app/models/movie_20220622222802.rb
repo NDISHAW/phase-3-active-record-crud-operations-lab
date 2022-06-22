@@ -26,20 +26,7 @@ class Movie < ActiveRecord::Base
         Movie.where("release_date > 2002")
     end
 
-    def update_with_attributes(attributes)
-        self.update(attributes)
-    end
+    def update_with_attributes(attribute)
 
-    def self.update_all_titles(title)
-        Movie.update(title: title)
-    end
-
-    def self.delete_by_id(id)
-        movie = Movie.find(id)
-        movie.destroy
-    end
-
-    def self.delete_all_movies
-        Movie.destroy_all
-    end
+        
 end

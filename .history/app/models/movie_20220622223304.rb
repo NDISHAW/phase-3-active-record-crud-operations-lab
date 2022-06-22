@@ -40,6 +40,6 @@ class Movie < ActiveRecord::Base
     end
 
     def self.delete_all_movies
-        Movie.destroy_all
+        Movi
     end
 end
